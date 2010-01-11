@@ -1,10 +1,10 @@
 $(function() {
-	$('ul.imageskipper.skip-x').imageskipper({
+	$('ul.imagescrubber.skip-x').imagescrubber({
 	  	width: 500,
 	  	height : 332,
 	  	axis : 'x'	
 	});
-	$('ul.imageskipper.skip-y').imageskipper({
+	$('ul.imagescrubber.skip-y').imagescrubber({
 	  	width: 500,
 	  	height : 332,
 	  	axis : 'y'

@@ -1,3 +1,4 @@
-# jQuery ImageSkipper Plugin
+# jQuery ImageScrubber Plugin
 
-Example : [http://bambambam.co.uk/labs/imageskipper/](http://bambambam.co.uk/labs/imageskipper/)
+Example : [http://bambambam.co.uk/labs/imagescrubber/](http://bambambam.co.uk/labs/imagescrubber/)
+
