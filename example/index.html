@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jQuery ImageSkipper</title>
+		<link href="css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/global.css" media="screen" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.imageskipper.dev.js"></script>
+		<script type="text/javascript" src="js/page.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+		<h1>jQuery ImageSkipper</h1>
+			<div class="polaroid">
+				<ul class="imageskipper skip-x">
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3112/3147380969_7d9fa72614.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3553/3691057289_56e8534163.jpg" /></li>
+				​	​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3554/3691848876_9f8bb8df22.jpg" /></li>
+				​	​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3654/3668622210_92175116b9.jpg" /></li>
+				​	​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3462/3351821205_c1cacfdfca.jpg" /></li>
+				​​​​​​​​​​​​​​​​​​​	​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3648/3352648700_779327496f.jpg" /></li>
+				​	​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3510/3247919736_cc9daf4cab.jpg" /></li>
+		​	​	​</ul>​	
+		​	​	​<p>X Axis skipper</p>
+​<pre>​<code><span class="keyword">$</span>(<span class="string">'ul.imageskipper li img'</span>).imageskipper({
+	width: <span class="constant">380</span>,
+	height : <span class="constant">270</span>,
+	axis : <span class="constant">'x'</span>
+});</code></pre>
+	​	​	​</div>
+​	​	​	<div class="polaroid">
+​	​	​		<ul class="imageskipper skip-y">
+​	​	​		​	​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3654/3668622210_92175116b9.jpg" /></li>
+​	​	​		​	​​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3462/3351821205_c1cacfdfca.jpg" /></li>
+​	​	​		​	​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3648/3352648700_779327496f.jpg" /></li>
+​	​	​		​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3112/3147380969_7d9fa72614.jpg" /></li>
+​	​	​		​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3553/3691057289_56e8534163.jpg" /></li>
+​	​	​		​	​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3554/3691848876_9f8bb8df22.jpg" /></li>
+​	​	​		​	​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3510/3247919736_cc9daf4cab.jpg" /></li>
+​	​	​		​	​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​	​	​		​	​​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3462/3351821205_c1cacfdfca.jpg" /></li>
+​	​	​	​	​</ul>​	
+	​	​	​	​<p>Y Axis skipper</p>
+<pre>​<code><span class="keyword">$</span>(<span class="string">'ul.imageskipper li img'</span>).imageskipper({
+	​width: <span class="constant">380</span>,
+​	height : <span class="constant">270</span>,
+​	​axis : <span class="constant">'y'</span>
+​});</code></pre>
+	​	​	​​</div>
+​	​	​</div>
+	</body>
+</html>
