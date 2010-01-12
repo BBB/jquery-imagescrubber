@@ -6,19 +6,33 @@ body {
 		margin: 0 0 25px;
 		text-shadow:0 1px 0 #F5F5F5;
 		color: #5C593D;
+		float:left;
 	}
 	p {
 		font-size: 12px;
 		line-height: 12px;
 		margin-bottom: 10px;
 	}
+	a.button {
+		float:right;
+		display:block;
+		font-size:11px;
+		background:#fff;
+		padding:5px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		color:#000;	
+		text-decoration:none;	
+	}
 #wrapper {
-	width: 550px;
+	width: 540px;
 	margin: 0 auto;
 	padding: 25px 0;
 }
 	.polaroid {	
 		margin: 0 0 25px;
+		clear:both;
 		background: #fff;
 		padding: 20px;
 		line-height: 0;
@@ -26,11 +40,11 @@ body {
 		-webkit-border-radius: 5px;
 		border-radius: 5px;
 	}
-		ul.imageskipper {
+		ul.imagescrubber {
 			line-height: 0;
 			margin-bottom: 10px;
 		}	
-			ul.imageskipper li {
+			ul.imagescrubber li {
 				display: inline;
 				float: left;	
 			}

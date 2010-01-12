@@ -2,51 +2,53 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>jQuery imagescrubber</title>
+		<title>jQuery ImageScrubber</title>
 		<link href="css/reset.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="css/global.css" media="screen" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4rc1.min.js"></script>
 		<script type="text/javascript" src="js/jquery.imagescrubber.dev.js"></script>
 		<script type="text/javascript" src="js/page.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
-		<h1>jQuery imagescrubber</h1>
+			<h1>jQuery imagescrubber</h1>
+			<a href="http://github.com/BBB/jquery-imagescrubber" class="button">View Source</a>
 			<div class="polaroid">
 				<ul class="imagescrubber skip-x">
 				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3112/3147380969_7d9fa72614.jpg" /></li>
 				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3553/3691057289_56e8534163.jpg" /></li>
-				​	​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3554/3691848876_9f8bb8df22.jpg" /></li>
-				​	​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3654/3668622210_92175116b9.jpg" /></li>
-				​	​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3462/3351821205_c1cacfdfca.jpg" /></li>
-				​​​​​​​​​​​​​​​​​​​	​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3648/3352648700_779327496f.jpg" /></li>
-				​	​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3510/3247919736_cc9daf4cab.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3554/3691848876_9f8bb8df22.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3654/3668622210_92175116b9.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3462/3351821205_c1cacfdfca.jpg" /></li>
+				​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3648/3352648700_779327496f.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3510/3247919736_cc9daf4cab.jpg" /></li>
 		​	​	​</ul>​	
-		​	​	​<p>X Axis skipper</p>
-​<pre>​<code><span class="keyword">$</span>(<span class="string">'ul.imagescrubber li img'</span>).imagescrubber({
+		​	​	​<p>X Axis Scrubber</p>
+<pre><code><span class="keyword">$</span>(<span class="string">'ul.imagescrubber.skip-x'</span>).imagescrubber({
 	width: <span class="constant">380</span>,
 	height : <span class="constant">270</span>,
-	axis : <span class="constant">'x'</span>
+	items : <span class="string">'li'</span>,
+	axis : <span class="string">'x'</span>
 });</code></pre>
-	​	​	​</div>
-​	​	​	<div class="polaroid">
-​	​	​		<ul class="imagescrubber skip-y">
-​	​	​		​	​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3654/3668622210_92175116b9.jpg" /></li>
-​	​	​		​	​​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3462/3351821205_c1cacfdfca.jpg" /></li>
-​	​	​		​	​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3648/3352648700_779327496f.jpg" /></li>
-​	​	​		​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3112/3147380969_7d9fa72614.jpg" /></li>
-​	​	​		​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3553/3691057289_56e8534163.jpg" /></li>
-​	​	​		​	​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3554/3691848876_9f8bb8df22.jpg" /></li>
-​	​	​		​	​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3510/3247919736_cc9daf4cab.jpg" /></li>
-​	​	​		​	​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​	​	​		​	​​​​​​​​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3462/3351821205_c1cacfdfca.jpg" /></li>
-​	​	​	​	​</ul>​	
-	​	​	​	​<p>Y Axis skipper</p>
-<pre>​<code><span class="keyword">$</span>(<span class="string">'ul.imagescrubber li img'</span>).imagescrubber({
-	​width: <span class="constant">380</span>,
-​	height : <span class="constant">270</span>,
-​	​axis : <span class="constant">'y'</span>
-​});</code></pre>
-	​	​	​​</div>
+	​	​	</div>
+			<div class="polaroid">
+				<ul class="imagescrubber skip-y">
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3112/3147380969_7d9fa72614.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3553/3691057289_56e8534163.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3554/3691848876_9f8bb8df22.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3654/3668622210_92175116b9.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3462/3351821205_c1cacfdfca.jpg" /></li>
+				​​​​<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3648/3352648700_779327496f.jpg" /></li>
+				​	<li><img width="500" height="332" alt="" src="http://farm4.static.flickr.com/3510/3247919736_cc9daf4cab.jpg" /></li>
+		​	​	​</ul>​	
+		​	​	​<p>Y Axis Scrubber</p>
+<pre><code><span class="keyword">$</span>(<span class="string">'ul.imagescrubber.skip-y'</span>).imagescrubber({
+	width: <span class="constant">380</span>,
+	height : <span class="constant">270</span>,
+	items : <span class="string">'li'</span>,
+	axis : <span class="string">'x'</span>
+});</code></pre>
+	​	​	</div>
 ​	​	​</div>
 	</body>
 </html>
