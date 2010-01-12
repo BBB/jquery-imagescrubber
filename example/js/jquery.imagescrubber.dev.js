@@ -42,7 +42,7 @@
 				
 			    var relative = e[eventaxis] - this[offsetval];
 			    
-			    var cursection = Math.round(relative / sections);
+			    var cursection = (relative / sections  + "").substring(0,1);
 			    
 			    if (relative < dimension && activesection !== cursection) {
 			    
